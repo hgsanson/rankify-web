@@ -1,3 +1,4 @@
+import { API_BASE_URL } from '@/api'
 import Image from 'next/image'
 import logo from '../../../assets/logo.png'
 import InviteLinkInput from './invite-link-input'
@@ -15,8 +16,6 @@ export default async function InvitePage(props: InvitePageProps) {
 
   // const inviteLink = `http://localhost:3333/invites/${subscriberId}`
 
-  const API_BASE_URL =
-    process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3333'
   const inviteLink = `${API_BASE_URL}/invites/${subscriberId}`
 
   return (
