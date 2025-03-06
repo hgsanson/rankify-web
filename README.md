@@ -6,11 +6,11 @@
 
 ### Registration page:
 
-![Project image](./src/assets/screeshots/registration)
+![Project image](./public/screenshots/registration.png)
 
 ### Registration confirmed
 
-![Project image](./src/assets/screeshots/registration-confirmed)
+![Project image](./public/screenshots/registration-confirmed.png)
 
 ## About the project 📝
 
