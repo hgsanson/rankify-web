@@ -86,4 +86,4 @@ $ npm run dev
 
 <br>
 
-### 4. Now register on the login screen and you're ready to go! 🎉
+### 4. Now you can test the app! 🎉
