@@ -22,7 +22,7 @@ export default async function Stats({ subscriberId }: StatsProps) {
           {accessCount}
         </span>
         <span className="text-sm text-gray-300 leading-none text-center">
-          Acessos ao link
+          Clicks
         </span>
 
         <MousePointerClick className="size-5 text-purple absolute top-3 left-3" />
