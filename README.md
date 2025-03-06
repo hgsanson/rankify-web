@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <h1 align="center"><a href="https://food-explorer-vasc-333.netlify.app/">Rankify 🏆</a></h1>
+</p>
 
-## Getting Started
+> Status: Finished ✅
 
-First, run the development server:
+### Registration page:
+
+![Project image](./src/assets/screeshots/registration)
+
+### Registration confirmed
+
+![Project image](./src/assets/screeshots/registration-confirmed)
+
+## About the project 📝
+
+This project is a ranking system that tracks and ranks users based on the number of registrations made through their unique referral links. It also takes into account the number of clicks on each link, providing a more comprehensive view of engagement and effectiveness.
+
+The system highlights the top 3 users with the highest number of successful referrals, encouraging participation and competition. Whether for marketing campaigns, affiliate programs, or community growth initiatives, this ranking mechanism helps measure user influence and incentivizes engagement.
+
+## Technologies used in this project 🛠️
+
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://legacy.reactjs.org/docs/getting-started.html)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [Orval](https://orval.dev/)
+
+## How can I use it? 💻
+
+### 1. Clone the project to your computer.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+#It is necessary to make a clone of the API version and another clone of the WEB version
+#To WEB version:
+$ git clone git@github.com:hgsanson/rankify-web.git
+
+#To API version:
+$ git clone git@github.com:hgsanson/rankify-server.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. With the project open in an IDE, open the rankify-server and run the commands:
 
-## Learn More
+```bash
+# Install the packages needed to run the project
+$ npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Run the Docker (must be installed in your environment)
+$ docker compose up -d
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Create database migration
+$ npm run db:migrate
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Run the API
+$ npm run dev
+```
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. With the server connected, now open the rankify-web file in an IDE of your choice and run it:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Install the packages needed to run the project
+$ npm install
+```
+
+```bash
+# To generate TypeScript file from OpenAPI
+$ npx orval
+```
+
+```bash
+# To start frontend
+$ npm run dev
+```
+
+<br>
+
+### 4. Now register on the login screen and you're ready to go! 🎉
